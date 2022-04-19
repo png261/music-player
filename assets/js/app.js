@@ -23,7 +23,7 @@ $(document).ready(function () {
         const PROGRESS_COLOR = getComputedStyle(document.documentElement).getPropertyValue(
             '--progress-bg-color'
         );
-		const ASSETS_PATH = "/assets"
+		const ASSETS_PATH = "./assets"
 
         let isPlay = false;
         let isMute = false;
