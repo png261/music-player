@@ -23,6 +23,7 @@ $(document).ready(function () {
         const PROGRESS_COLOR = getComputedStyle(document.documentElement).getPropertyValue(
             '--progress-bg-color'
         );
+		const ASSETS_PATH = "/assets"
 
         let isPlay = false;
         let isMute = false;
@@ -36,7 +37,7 @@ $(document).ready(function () {
                 title: '3',
                 author: 'Ngọt',
                 date: 2019,
-                thumbnail: '../assets/images/thumbnail/ngot.jpg',
+                thumbnail: `${ASSETS_PATH}/images/thumbnail/ngot.jpg`,
                 currentIndex: 0,
                 isRandom: false,
                 isRepeat: false,
@@ -44,39 +45,39 @@ $(document).ready(function () {
                 songs: [
                     {
                         name: 'MÀU (đen trắng)',
-                        path: '../assets/songs/playlist_1/MAU den trang - Ngot (NhacPro.net).mp3',
+                        path: `${ASSETS_PATH}/songs/playlist_1/MAU den trang - Ngot (NhacPro.net).mp3`,
                     },
                     {
                         name: 'EM CÓ CHẮC Không (?) (bài ca rebound)',
-                        path: '../assets/songs/playlist_1/EM CO CHAC Khong bai ca reboun... - Ngot (NhacPro.net).mp3',
+                        path: `${ASSETS_PATH}/songs/playlist_1/EM CO CHAC Khong bai ca reboun... - Ngot (NhacPro.net).mp3`,
                     },
                     {
                         name: 'GIẢ VỜ',
-                        path: '../assets/songs/playlist_1/GIA VO - Ngot (NhacPro.net).mp3',
+                        path: `${ASSETS_PATH}/songs/playlist_1/GIA VO - Ngot (NhacPro.net).mp3`,
                     },
                     {
                         name: '(sau đây là) DỰ BÁO THỜI TIẾT (cho các vùng vào ngày mai)',
-                        path: '../assets/songs/playlist_1/sau day la DU BAO THOI TIET ch... - Ngot (NhacPro.net).mp3',
+                        path: `${ASSETS_PATH}/songs/playlist_1/sau day la DU BAO THOI TIET ch... - Ngot (NhacPro.net).mp3`,
                     },
                     {
                         name: 'Chuyển KÊNH (sản phẩm này không phải là thuốc)',
-                        path: '../assets/songs/playlist_1/Chuyen KENH san pham nay khong... - Ngot (NhacPro.net).mp3',
+                        path: `${ASSETS_PATH}/songs/playlist_1/Chuyen KENH san pham nay khong... - Ngot (NhacPro.net).mp3`,
                     },
                     {
                         name: 'HẾT THỜI',
-                        path: '../assets/songs/playlist_1/HET THOI - Ngot (NhacPro.net).mp3',
+                        path: `${ASSETS_PATH}/songs/playlist_1/HET THOI - Ngot (NhacPro.net).mp3`,
                     },
                     {
                         name: 'VÉ ĐI Thiên Đường (một chiều)',
-                        path: '../assets/songs/playlist_1/VE DI Thien Duong mot chieu - Ngot (NhacPro.net).mp3',
+                        path: `${ASSETS_PATH}/songs/playlist_1/VE DI Thien Duong mot chieu - Ngot (NhacPro.net).mp3`,
                     },
                     {
                         name: '(tôi) ĐI TRÚ ĐÔNG',
-                        path: '../assets/songs/playlist_1/toi DI TRU DONG - Ngot (NhacPro.net).mp3',
+                        path: `${ASSETS_PATH}/songs/playlist_1/toi DI TRU DONG - Ngot (NhacPro.net).mp3`,
                     },
                     {
                         name: 'LẦN CUỐI (đi bên em xót xa người ơi)',
-                        path: '../assets/songs/playlist_1/LAN CUOI di ben em xot xa nguo... - Ngot (NhacPro.net).mp3',
+                        path: `${ASSETS_PATH}/songs/playlist_1/LAN CUOI di ben em xot xa nguo... - Ngot (NhacPro.net).mp3`,
                     },
                 ],
             },
@@ -84,7 +85,7 @@ $(document).ready(function () {
                 title: 'Đen Vâu',
                 author: 'Đen Vâu',
                 date: 2020,
-                thumbnail: '../assets/images/thumbnail/denvau.jpg',
+                thumbnail: `${ASSETS_PATH}/images/thumbnail/denvau.jpg`,
                 currentIndex: 0,
                 isRandom: false,
                 isRepeat: false,
@@ -92,47 +93,47 @@ $(document).ready(function () {
                 songs: [
                     {
                         name: 'Loving You',
-                        path: '../assets/songs/playlist_2/Loving You - Kimmese Den (NhacPro.net).mp3',
+                        path: `${ASSETS_PATH}/songs/playlist_2/Loving You - Kimmese Den (NhacPro.net).mp3`,
                     },
                     {
                         name: 'Bài Này Chill Phết',
-                        path: '../assets/songs/playlist_2/Bai Nay Chill Phet - Den MIN (NhacPro.net).mp3',
+                        path: `${ASSETS_PATH}/songs/playlist_2/Bai Nay Chill Phet - Den MIN (NhacPro.net).mp3`,
                     },
                     {
                         name: 'Trời hôm nay nhiều mây cực!',
-                        path: '../assets/songs/playlist_2/Troi hom nay nhieu may cuc - Den (NhacPro.net).mp3',
+                        path: `${ASSETS_PATH}/songs/playlist_2/Troi hom nay nhieu may cuc - Den (NhacPro.net).mp3`,
                     },
                     {
                         name: 'Hai Triệu Năm',
-                        path: '../assets/songs/playlist_2/Hai Trieu Nam - Den Bien (NhacPro.net).mp3',
+                        path: `${ASSETS_PATH}/songs/playlist_2/Hai Trieu Nam - Den Bien (NhacPro.net).mp3`,
                     },
                     {
                         name: 'Anh Đếch Cần Gì Nhiều Ngoài Em',
-                        path: '../assets/songs/playlist_2/Anh Dech Can Gi Nhieu Ngoai Em - Den Vu Thanh Dong (NhacPro.net).mp3',
+                        path: `${ASSETS_PATH}/songs/playlist_2/Anh Dech Can Gi Nhieu Ngoai Em - Den Vu Thanh Dong (NhacPro.net).mp3`,
                     },
                     {
                         name: 'Đưa Nhau Đi Trốn',
-                        path: '../assets/songs/playlist_2/Dua Nhau Di Tron - Den Linh Cao (NhacPro.net).mp3',
+                        path: `${ASSETS_PATH}/songs/playlist_2/Dua Nhau Di Tron - Den Linh Cao (NhacPro.net).mp3`,
                     },
                     {
                         name: 'Mười Năm (Lộn Xộn 3)',
-                        path: '../assets/songs/playlist_2/Muoi Nam Lon Xon 3 - Den Ngoc Linh (NhacPro.net).mp3',
+                        path: `${ASSETS_PATH}/songs/playlist_2/Muoi Nam Lon Xon 3 - Den Ngoc Linh (NhacPro.net).mp3`,
                     },
                     {
                         name: 'Đố Em Biết Anh Đang Nghĩ Gì',
-                        path: '../assets/songs/playlist_2/Do Em Biet Anh Dang Nghi Gi - JustaTee Den Bien (NhacPro.net).mp3',
+                        path: `${ASSETS_PATH}/songs/playlist_2/Do Em Biet Anh Dang Nghi Gi - JustaTee Den Bien (NhacPro.net).mp3`,
                     },
                     {
                         name: 'Ta Cứ Đi Cùng Nhau',
-                        path: '../assets/songs/playlist_2/Ta Cu Di Cung Nhau - Den Linh Cao (NhacPro.net).mp3',
+                        path: `${ASSETS_PATH}/songs/playlist_2/Ta Cu Di Cung Nhau - Den Linh Cao (NhacPro.net).mp3`,
                     },
                     {
                         name: 'Đi Theo Bóng Mặt Trời',
-                        path: '../assets/songs/playlist_2/Di Theo Bong Mat Troi - Den Giang Nguyen (NhacPro.net).mp3',
+                        path: `${ASSETS_PATH}/songs/playlist_2/Di Theo Bong Mat Troi - Den Giang Nguyen (NhacPro.net).mp3`,
                     },
                     {
                         name: 'Cho Tôi Lang Thang',
-                        path: '../assets/songs/playlist_2/Cho Toi Lang Thang - Ngot Den (NhacPro.net).mp3',
+                        path: `${ASSETS_PATH}/songs/playlist_2/Cho Toi Lang Thang - Ngot Den (NhacPro.net).mp3`,
                     },
                 ],
             },
