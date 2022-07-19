@@ -2,5 +2,5 @@ version = 1
 
 [[analyzers]]
 name = "javascript"
-environment = "jquery"
+  environment = ["jquery"]
 enabled = true
